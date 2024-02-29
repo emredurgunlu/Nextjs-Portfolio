@@ -32,7 +32,22 @@ const ContactPage = () => {
           </div>
         </div>
         {/* FORM CONTAINER */}
-        <form className="h-1/2 lg:h-full lg:w-1/2"></form>
+        <form className="h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col justify-center gap-8 p-24">
+          <span>Dear Emre DURGUNLU,</span>
+          <textarea
+            rows={6}
+            className="bg-transparent border-b-2 border-b-black outline-none resize-none"
+          />
+          <span>My mail address is:</span>
+          <input
+            type="text"
+            className="bg-transparent border-b-2 border-b-black outline-none"
+          />
+          <span>Regards</span>
+          <button className="bg-purple-200 rounded font-semibold text-gray-600 p-4">
+            Send
+          </button>
+        </form>
       </div>
     </motion.div>
   );
