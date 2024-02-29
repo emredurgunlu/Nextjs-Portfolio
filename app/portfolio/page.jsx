@@ -42,7 +42,8 @@ const items = [
 const PortfolioPage = () => {
   const ref = useRef();
   const { scrollYProgress } = useScroll({ target: ref });
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+  // ["0%", "-100%"] olunca sağ tarafta en son gereksiz beyaz boşluk oluyordu
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-80%"]);
   return (
     <motion.div
       className="h-full"
@@ -55,8 +56,10 @@ const PortfolioPage = () => {
         <div className="w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-8xl text-center">
           My Works
         </div>
-        <div className="sticky top-0 flex h-screen gap-4 items-center">
-          <div className="flex">
+        <div className="sticky top-0 flex h-screen gap-4 items-center overflow-hidden">
+          {/* style={{x:x}} ile style={{x}} aynı. overflow-hidden yatay scroll barı engelledi*/}
+          <motion.div style={{x}} className="flex">
+            <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-purple-300 to-red-300"/>
             {items.map((item) => (
               <div
                 className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r ${item.color}`}
@@ -74,7 +77,7 @@ const PortfolioPage = () => {
                 </div>
               </div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
     </motion.div>
