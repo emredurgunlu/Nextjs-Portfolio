@@ -1,8 +1,13 @@
 "use client";
-import { motion } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 import Image from "next/image";
+import Brain from "../components/brain";
+import { useRef } from "react";
 
 const AboutPage = () => {
+  const containerRef = useRef();
+  const { scrollYProgress } = useScroll({ container: containerRef });
+
   return (
     <motion.div
       className="h-full"
@@ -13,7 +18,7 @@ const AboutPage = () => {
       {/* CONTAINER */}
       {/* overflow-scroll eklemezsen pembe arkaplan h-full dediğin için sayfa yüklekliği kadar oluyor ama scroll yaptığında arkaplan bitiyor devam etmiyor*/}
       {/* lg:flex beyin animasyonu için*/}
-      <div className="h-full overflow-scroll lg:flex">
+      <div className="h-full overflow-scroll lg:flex" ref={containerRef}>
         {/* TEXT CONTAINER */}
         <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 lg:w-2/3 lg:pr-0 xl:1/2">
           {/* BIOGRAPHY CONTAINER */}
@@ -223,7 +228,9 @@ const AboutPage = () => {
           </div>
         </div>
         {/* SVG CONTAINER */}
-        <div className="hidden lg:block w-1/3 xl:1/2"></div>
+        <div className="hidden lg:block w-1/3 sticky top-0 z-30 xl:w-1/2">
+          <Brain scrollYProgress={scrollYProgress} />
+        </div>
       </div>
     </motion.div>
   );
