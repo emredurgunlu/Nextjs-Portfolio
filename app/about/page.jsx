@@ -45,7 +45,7 @@ const AboutPage = () => {
             <i>Let&apos;s turn lines of code into works of art!</i>
             {/* BIOGRAPHY SIGN SVG*/}
             <div className="self-end">
-              <Image src="/signature.png" alt="" width="86" height="82" />
+              <Image src="/signature.png" alt="signature" width="250" height="250" />
             </div>
             {/* BIOGRAPHY SCROLL SVG */}
             <motion.svg
