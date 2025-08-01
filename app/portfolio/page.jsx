@@ -8,10 +8,10 @@ const items = [
   {
     id: 1,
     color: "from-red-300 to-blue-300",
-    title: "React Commerce",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-    img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    link: "https://lama.dev",
+    title: "React Stock App",
+    desc: "This project, developed with React, is a single-page online web application. It allows you to manage and receive orders. Additionally, it includes an inventory system with the ability to add, edit, delete, and view products, companies, brands, sales, and purchases. Technologies Used: React, Redux, Redux Toolkit, Axios, React Router,  Material UI, Redux-Persist, React-Toastify, Formik, Yup.",
+    img: "/stockapp.jpg",
+    link: "https://github.com/emredurgunlu/Stock-App-FrontEnd",
   },
   {
     id: 2,
@@ -75,7 +75,7 @@ const PortfolioPage = () => {
                   <p className="w-80 md:w-96 lg:w-[500px] lg:text-lg xl:w-[600px]">
                     {item.desc}
                   </p>
-                  <Link href={item.link} className="flex justify-end">
+                  <Link href={item.link} className="flex justify-end" target="_blank">
                     <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">
                       See Demo
                     </button>

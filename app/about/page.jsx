@@ -220,7 +220,7 @@ const AboutPage = () => {
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                    Currently developing the company's ERP web application using ASP.NET Core MVC, jQuery, Bootstrap, and MSSQL.{" "}
+                    Currently developing the company&apos;s ERP web application using ASP.NET Core MVC, jQuery, Bootstrap, and MSSQL.{" "}
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
