@@ -166,28 +166,28 @@ const AboutPage = () => {
               animate={isExperienceRefInView ? { x: 0 } : {}}
               className=""
             >
-              {/* EXPERIENCE LIST ITEM */}
-              <div className="flex justify-between h-48">
+               {/* EXPERIENCE LIST ITEM */}
+              <div className="flex justify-between h-90">
                 {/* LEFT */}
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Senior JavaScript Engineer
+                    Flutter Developer{" "}
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                    I led web development, offering expertise in JavaScript
-                    frameworks.{" "}
+                    I focused on creating seamless user experiences and optimizing app performance. I was involved in multiple projects such as Dorse app, Interny app and Walkedu app and collaborated closely with the team to deliver innovative solutions that align with the company’s technology vision.{" "}
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
-                    2024 - Present
+                    2024 - 2025{" "}
                   </div>
                   {/* JOB COMPANY */}
-                  {/* w-fit bg-white renginin enine bütün alanı kaplamamasını sadece yazı büyüklüğü kadar olmasını sağlıyor */}
-                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                    Apple
-                  </div>
+                  <a href="https://juniustech.com/" target="_blank" rel="noopener noreferrer">
+                    <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+                      JuniusTech Software Company
+                    </div>
+                  </a>
                 </div>
                 {/* CENTER */}
                 <div className="w-1/6 flex justify-center">
@@ -201,7 +201,7 @@ const AboutPage = () => {
                 <div className="w-1/3 "></div>
               </div>
               {/* EXPERIENCE LIST ITEM */}
-              <div className="flex justify-between h-48">
+              <div className="flex justify-between h-86">
                 {/* LEFT */}
                 <div className="w-1/3 "></div>
                 {/* CENTER */}
@@ -216,21 +216,22 @@ const AboutPage = () => {
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Senior React Developer
+                    Flutter Developer
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                    I spearheaded React-based application development,
-                    leveraging advanced skills.{" "}
+                    I developed mobile applications for android and desktop applications for windows. Completed projects include: Car Control App, Brake Tester App, Diesel Particulate Filter Cleaning App, Car Dashboard App, ECU Test App, Smart Emulator App, Steering Test App, OBD Talk App.{" "}
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
-                    2019 - 2024{" "}
+                    2022 - 2024{" "}
                   </div>
                   {/* JOB COMPANY */}
-                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                    Microsoft
-                  </div>
+                  <a href="https://nitrobilisim.com.tr/tr" target="_blank" rel="noopener noreferrer">
+                    <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+                      Nitro Mechatronics Company
+                    </div>
+                  </a>
                 </div>
               </div>
               {/* EXPERIENCE LIST ITEM */}
@@ -239,17 +240,22 @@ const AboutPage = () => {
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Freelancer{" "}
+                    Manuel Tester{" "}
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                    I provided web solutions, applying a range of technologies
-                    to address client requirements.{" "}
+                    I tested websites and mobile applications, identified errors and reported them.{" "}
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
-                    2010 - 2019{" "}
+                    2021 - 2021{" "}
                   </div>
+                  {/* JOB COMPANY */}
+                  <a href="https://www.test.io" target="_blank" rel="noopener noreferrer">
+                    <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+                      Test IO
+                    </div>
+                  </a>
                 </div>
                 {/* CENTER */}
                 <div className="w-1/6 flex justify-center">
