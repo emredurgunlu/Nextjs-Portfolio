@@ -87,11 +87,14 @@ const Navbar = () => {
       </div>
       {/* SOCIAL */}
       <div className="hidden md:flex gap-4 w-1/3">
-        <Link href="#">
+        <Link href="https://github.com/emredurgunlu" target="_blank">
           <Image src="/github.png" alt="" width={24} height={24} />
         </Link>
-        <Link href="#">
+        <Link href="https://www.linkedin.com/in/emre-durgunlu/" target="_blank">
           <Image src="/linkedin.png" alt="" width={24} height={24} />
+        </Link>
+        <Link href="https://medium.com/@emredurgunlu" target="_blank">
+          <Image src="/medium.png" alt="" width={33} height={19} />
         </Link>
       </div>
       {/* RESPONSIVE MENU */}

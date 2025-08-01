@@ -34,7 +34,7 @@ const AboutPage = () => {
             <h1 className="font-bold text-2xl ">BIOGRAPHY</h1>
             {/* BIOGRAPHY DESC */}
             <p className="text-lg">
-              Hello there! I&apos;m Emre, a passionate full stack developer
+              Hello there! I&apos;m Emre, a passionate full stack web and cross platform mobile developer
               dedicated to crafting seamless digital experiences. With a journey
               that began in 2021, I&apos;ve been relentlessly learning and
               refining my skills ever since. I thrive on tackling challenges and
@@ -45,7 +45,12 @@ const AboutPage = () => {
             <i>Let&apos;s turn lines of code into works of art!</i>
             {/* BIOGRAPHY SIGN SVG*/}
             <div className="self-end">
-              <Image src="/signature.png" alt="signature" width="250" height="250" />
+              <Image
+                src="/signature.png"
+                alt="signature"
+                width="375"
+                height="375"
+              />
             </div>
             {/* BIOGRAPHY SCROLL SVG */}
             <motion.svg
@@ -89,37 +94,76 @@ const AboutPage = () => {
               className="flex gap-4 flex-wrap"
             >
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                JavaScript
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                TypeScript
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 React.js
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Next.js
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                SCSS
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Tailwind CSS
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                MongoDB
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                PostgreSQL
+                Flutter
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Node.js
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Nest.js
+                ASP.NET Core
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Express.js
+                SQL
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Drizzle ORM
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Tailwind CSS
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Bootstrap
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                JavaScript
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Dart
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Material UI
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Shadcn UI
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                NextAuth.js Google Sign In
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Module CSS
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Figma UI/UX
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Web Development
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Cross Platform Mobile Development
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Google Play Store
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Windows Desktop Development
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Git Github
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Web API JSON
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Postman
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Swagger
               </div>
             </motion.div>
             {/* SKILL SCROLL SVG */}
@@ -166,7 +210,87 @@ const AboutPage = () => {
               animate={isExperienceRefInView ? { x: 0 } : {}}
               className=""
             >
-               {/* EXPERIENCE LIST ITEM */}
+              {/* EXPERIENCE LIST ITEM */}
+              <div className="flex justify-between h-68">
+                {/* LEFT */}
+                <div className="w-1/3 ">
+                  {/* JOB TITLE */}
+                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
+                    Web Developer{" "}
+                  </div>
+                  {/* JOB DESC */}
+                  <div className="p-3 text-sm italic">
+                    Currently developing the company's ERP web application using ASP.NET Core MVC, jQuery, Bootstrap, and MSSQL.{" "}
+                  </div>
+                  {/* JOB DATE */}
+                  <div className="p-3 text-red-400 text-sm font-semibold">
+                    2025 - Present{" "}
+                  </div>
+                  {/* JOB COMPANY */}
+                  <a
+                    href="https://dener.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+                      Dener Machine Company
+                    </div>
+                  </a>
+                </div>
+                {/* CENTER */}
+                <div className="w-1/6 flex justify-center">
+                  {/* LINE */}
+                  <div className="w-1 h-full bg-gray-600 rounded relative">
+                    {/* LINE CIRCLE */}
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+                  </div>
+                </div>
+                {/* RIGHT */}
+                <div className="w-1/3 "></div>
+              </div>
+              {/* EXPERIENCE LIST ITEM */}
+              <div className="flex justify-between h-90">
+                {/* LEFT */}
+                <div className="w-1/3 "></div>
+                {/* CENTER */}
+                <div className="w-1/6 flex justify-center">
+                  {/* LINE */}
+                  <div className="w-1 h-full bg-gray-600 rounded relative">
+                    {/* LINE CIRCLE */}
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+                  </div>
+                </div>
+                {/* RIGHT */}
+                <div className="w-1/3 ">
+                  {/* JOB TITLE */}
+                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
+                    Flutter Developer{" "}
+                  </div>
+                  {/* JOB DESC */}
+                  <div className="p-3 text-sm italic">
+                    I focused on creating seamless user experiences and
+                    optimizing app performance. I was involved in multiple
+                    projects such as Dorse app, Interny app and Walkedu app and
+                    collaborated closely with the team to deliver innovative
+                    solutions that align with the company’s technology vision.{" "}
+                  </div>
+                  {/* JOB DATE */}
+                  <div className="p-3 text-red-400 text-sm font-semibold">
+                    2024 - 2025{" "}
+                  </div>
+                  {/* JOB COMPANY */}
+                  <a
+                    href="https://juniustech.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+                      JuniusTech Software Company
+                    </div>
+                  </a>
+                </div>
+              </div>
+              {/* EXPERIENCE LIST ITEM */}
               <div className="flex justify-between h-90">
                 {/* LEFT */}
                 <div className="w-1/3 ">
@@ -176,67 +300,51 @@ const AboutPage = () => {
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                    I focused on creating seamless user experiences and optimizing app performance. I was involved in multiple projects such as Dorse app, Interny app and Walkedu app and collaborated closely with the team to deliver innovative solutions that align with the company’s technology vision.{" "}
-                  </div>
-                  {/* JOB DATE */}
-                  <div className="p-3 text-red-400 text-sm font-semibold">
-                    2024 - 2025{" "}
-                  </div>
-                  {/* JOB COMPANY */}
-                  <a href="https://juniustech.com/" target="_blank" rel="noopener noreferrer">
-                    <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                      JuniusTech Software Company
-                    </div>
-                  </a>
-                </div>
-                {/* CENTER */}
-                <div className="w-1/6 flex justify-center">
-                  {/* LINE */}
-                  <div className="w-1 h-full bg-gray-600 rounded relative">
-                    {/* LINE CIRCLE */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
-                  </div>
-                </div>
-                {/* RIGHT */}
-                <div className="w-1/3 "></div>
-              </div>
-              {/* EXPERIENCE LIST ITEM */}
-              <div className="flex justify-between h-86">
-                {/* LEFT */}
-                <div className="w-1/3 "></div>
-                {/* CENTER */}
-                <div className="w-1/6 flex justify-center">
-                  {/* LINE */}
-                  <div className="w-1 h-full bg-gray-600 rounded relative">
-                    {/* LINE CIRCLE */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
-                  </div>
-                </div>
-                {/* RIGHT */}
-                <div className="w-1/3 ">
-                  {/* JOB TITLE */}
-                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Flutter Developer
-                  </div>
-                  {/* JOB DESC */}
-                  <div className="p-3 text-sm italic">
-                    I developed mobile applications for android and desktop applications for windows. Completed projects include: Car Control App, Brake Tester App, Diesel Particulate Filter Cleaning App, Car Dashboard App, ECU Test App, Smart Emulator App, Steering Test App, OBD Talk App.{" "}
+                    I developed mobile applications for android and desktop
+                    applications for windows. Completed projects include: Car
+                    Control App, Brake Tester App, Diesel Particulate Filter
+                    Cleaning App, Car Dashboard App, ECU Test App, Smart
+                    Emulator App, Steering Test App, OBD Talk App.{" "}
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
                     2022 - 2024{" "}
                   </div>
                   {/* JOB COMPANY */}
-                  <a href="https://nitrobilisim.com.tr/tr" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://nitrobilisim.com.tr/tr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
                       Nitro Mechatronics Company
                     </div>
                   </a>
                 </div>
+                {/* CENTER */}
+                <div className="w-1/6 flex justify-center">
+                  {/* LINE */}
+                  <div className="w-1 h-full bg-gray-600 rounded relative">
+                    {/* LINE CIRCLE */}
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+                  </div>
+                </div>
+                {/* RIGHT */}
+                <div className="w-1/3 "></div>
               </div>
               {/* EXPERIENCE LIST ITEM */}
               <div className="flex justify-between h-48">
                 {/* LEFT */}
+                <div className="w-1/3 "></div>
+                {/* CENTER */}
+                <div className="w-1/6 flex justify-center">
+                  {/* LINE */}
+                  <div className="w-1 h-full bg-gray-600 rounded relative">
+                    {/* LINE CIRCLE */}
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+                  </div>
+                </div>
+                {/* RIGHT */}
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
@@ -244,29 +352,24 @@ const AboutPage = () => {
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                    I tested websites and mobile applications, identified errors and reported them.{" "}
+                    I tested websites and mobile applications, identified errors
+                    and reported them.{" "}
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
                     2021 - 2021{" "}
                   </div>
                   {/* JOB COMPANY */}
-                  <a href="https://www.test.io" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://www.test.io"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
                       Test IO
                     </div>
                   </a>
                 </div>
-                {/* CENTER */}
-                <div className="w-1/6 flex justify-center">
-                  {/* LINE */}
-                  <div className="w-1 h-full bg-gray-600 rounded relative">
-                    {/* LINE CIRCLE */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
-                  </div>
-                </div>
-                {/* RIGHT */}
-                <div className="w-1/3 "></div>
               </div>
             </motion.div>
           </div>
